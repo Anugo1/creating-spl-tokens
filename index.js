@@ -56,6 +56,7 @@ const toTokenAccount = await getOrCreateAssociatedTokenAccount(
 // Transfer the new token to the "toTokenAccount" we just created
 signature = await transfer(
 	connection,
+    
 	fromWallet,
 	fromTokenAccount.address,
 	toTokenAccount.address,
